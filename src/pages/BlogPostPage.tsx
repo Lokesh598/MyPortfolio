@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import BlogPost from '../components/BlogPost';
 import { blogPosts } from '../data/blogPosts';
+import BackToTopButton from '../components/BackToTopButton';
 
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>();
@@ -14,6 +15,7 @@ export default function BlogPostPage() {
   return (
     <div className="pt-24 bg-white dark:bg-gray-900 min-h-screen transition-colors">
       <BlogPost post={post} />
+      <BackToTopButton />
     </div>
   );
 }
