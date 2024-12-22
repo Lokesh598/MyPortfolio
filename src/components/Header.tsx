@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
@@ -29,6 +29,9 @@ export default function Header() {
             </a>
             <a href="https://linkedin.com/in/lokesh598" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <Linkedin size={20} />
+            </a>
+            <a href="https://linkedin.com/in/lokesh598" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <Instagram size={20} />
             </a>
             <a href="mailto:lokesh.ashawat@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <Mail size={20} />
